@@ -213,6 +213,9 @@ NLP tools for historical languages make the most sense when the language is atte
 - Texts: [Perseus Digital Library](http://www.perseus.tufts.edu/hopper/), a longstanding digital humanities project, with texts in Greek, Arabic, and English along with Latin
 - OCR: Tesseract 4.0 has [training data for Latin](https://github.com/tesseract-ocr/tessdata/blob/master/lat.traineddata)
 
+### Coptic
+- Tool suite: [Coptic Scriptorium](http://copticscriptorium.org/) has multiple [tools for annotating, converting, and processing Coptic](http://copticscriptorium.org/tools), including normalizers, a loan-word tagger, lemmatizer, universal dependency treebank, part-of-speech tagger, etc.
+
 
 ## Other language families & groups
 
