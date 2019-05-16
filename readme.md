@@ -9,9 +9,10 @@ This is *not a directory* but a moderately-opinionated, potentially one-time lis
 These tools and methods are not tied to any particular language. The caveat is that words have to be separated by a space (and what a "word" is may vary language-to-language, and not all languages put spaces between languages). A further caveat is that highly-inflected languages (e.g. languages with a lot of grammatical cases, like Latin, Russian, or Finnish) may perform poorly without lemmatization (using the "dictionary form" of words, versus whatever inflected form is actually present in the text), especially for smaller text corpora.
 
 - [Voyant](https://voyant-tools.org/)
+- [Lexos](http://lexos.wheatoncollege.edu)
 - Topic modeling - like [Mallet](http://mallet.cs.umass.edu/topics.php); if you use the [topic modeling tool](https://github.com/senderle/topic-modeling-tool) for a GUI-based interface, be sure to go into the "optional settings" and remove the text in the "Tokenize with regular expression" field. Also, your text files **must be saved as UTF-8** otherwise it won't work.
 - Word vectors - Ryan Heuser has a [nice set of blog posts introducing word vectors for literary analysis](http://ryanheuser.org/word-vectors-1/), and you can adapt this [Jupyter notebook for Russian text cleaning & word vectors](https://github.com/quinnanya/dlcl204/blob/master/harry_potter_tanya_grotter_project_2019/russian_text_cleanup_word_vectors.ipynb) to most languages (more generalized word vector notebook / tutorial coming this summer!)
-- Word counting, keyword-in-context, and similar approaches (many of which are included in Voyant, but you could also write Python or R code)
+- Word counting, keyword-in-context, and similar approaches (many of which are included in Voyant and Lexos, but you could also write Python or R code)
 
 ## Modern languages
 
