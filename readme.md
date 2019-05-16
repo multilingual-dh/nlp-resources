@@ -222,6 +222,7 @@ NLP tools for historical languages make the most sense when the language is atte
 ### Languages of Africa
 [Kathleen Siminyu](https://www.linkedin.com/today/author/kathleen-siminyu-7356b810?trk=public_profile_articles_see_all) has been working on developing NLP resources for languages of Africa, and posting update on LinkedIn. A February 2019 post describes work on a [Luganda-Kinyarwanda translation model based on word vector embeddings](https://www.linkedin.com/pulse/nlp-resources-african-languages-lugandakinyarwanda-model-siminyu?trk=portfolio_article-card_title).
 
+- Directory: [text corpora for languages of Nigeria](https://orikiwa.wordpress.com/nlp-resources-for-nigerian-languages/)
 
 ### Indigenous languages of the Americas
 "[Challenges of language technologies for the indigenous languages of the Americas](https://www.aclweb.org/anthology/papers/C/C18/C18-1006/)" (Manuel Mager, Ximena Gutierrez-Vasques, Gerardo Sierra, & Ivan Meza) in *Proceedings of the 27th International Conference on Computational Linguistics*, 2018) has an excellent overview of the current state of NLP for a variety of indigenous languages of the Americas.
