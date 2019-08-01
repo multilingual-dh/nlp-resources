@@ -190,6 +190,11 @@ Because Russian is highly inflected (i.e. a word can appear in many forms depend
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, named entity extraction (using Wikipedia data), morphological analysis, transliteration, and sentiment analysis for Vietnamese
 
 
+### Welsh
+- Python: [CyTag](https://github.com/CorCenCC/CyTag) - text segmenter, sentence splitter, tokeniser, part-of-speech tagger
+- OCR: Tesseract has [training data for Welsh](https://github.com/tesseract-ocr/tessdata/raw/4.00/cym.traineddata)
+- There's a few papers (e.g. [Towards a Welsh Semantic Annotation System](https://eprints.lancs.ac.uk/id/eprint/123588/1/lrec2018_cysemtagger.pdf)) talking about work on CySemTagger (a Welsh semantic annotation tool), but there doesn't seem to be a usable version yet
+
 ### Yiddish
 The [Yiddish Book Center](https://www.yiddishbookcenter.org/) has thousands of scanned PDFs of books in Yiddish, but without OCR. To get plain text versions of the books (OCR'd using Jochre), you can [create an account here](https://ocr.yiddishbookcenter.org).
 
