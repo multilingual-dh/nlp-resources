@@ -49,6 +49,10 @@ Chinese needs to be segmented (spaces artificially inserted between words) befor
 - OCR: Tesseract 4.0 has training data for [simplified Chinese Characters](https://github.com/tesseract-ocr/tessdata/blob/master/chi_sim.traineddata), [vertical simplified Chinese characters](https://github.com/tesseract-ocr/tessdata/blob/master/chi_sim_vert.traineddata), [traditional Chinese characters](https://github.com/tesseract-ocr/tessdata/blob/master/chi_tra.traineddata), and [vertical traditional Chinese characters](https://github.com/tesseract-ocr/tessdata/blob/master/chi_tra_vert.traineddata)
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, named entity extraction (using Wikipedia data), morphological analysis (Chinese and Gan Chinese), transliteration, and sentiment analysis (Chinese and Gan Chinese)
 
+### Dutch
+- Python: [a fork of Sequence Tagging](https://github.com/riedlma/sequence_tagging#download-models-and-embeddings) (NER using TensorFlow) has models for Dutch named entity recognition
+- OCR: Tesseract 4.0 has [training data for Dutch](https://github.com/tesseract-ocr/tessdata/raw/4.00/nld.traineddata)
+
 ### French
 French is partly supported by Stanford Core NLP, so the instructions for doing part-of-speech tagging should be almost identical to other languages that can use that software. Stanford Core NLP doesn't support French named-entity recognition, but there are other tools you can use like OpenNER.
 
@@ -67,6 +71,7 @@ There is a large community of DH folks doing text analysis on German under the "
 - Jupyter notebooks: [Example code for doing German NLP with different packages](https://github.com/goerlitz/nlp-german)
 - Directory: [NLP resources and tools for German](https://github.com/adbar/German-NLP)
 - Python: SpaCy offers [POS tags, dependency parse and named entities for German](https://spacy.io/models/de) based on a news corpus
+- Python: [a fork of Sequence Tagging](https://github.com/riedlma/sequence_tagging#download-models-and-embeddings) (NER using TensorFlow) has models for modern and historical German named entity recognition
 - OCR: Tesseract 4.0 has [training data for German](https://github.com/tesseract-ocr/tessdata/blob/master/deu.traineddata) as well as [Fraktur](https://github.com/tesseract-ocr/tessdata/blob/master/deu_frak.traineddata)
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, part-of-speech tagging, named entity extraction (using Wikipedia data), morphological analysis, transliteration, and sentiment analysis for German
 - Blog post: [Common pitfalls with the pre-processing of German text for NLP](https://medium.com/idealo-tech-blog/common-pitfalls-with-the-preprocessing-of-german-text-for-nlp-3cfb8dc19ebe) - geared towards commercial applications, but provides a useful overview and comparison of different part-of-speech taggers, stopword lists, compound splitting, etc.
@@ -100,6 +105,7 @@ The major tool available for Italian is *[Tint](http://tint.fbk.eu/), which is b
 
 - Tutorial: ^[Italian part-of-speech tagging with Tint](https://github.com/quinnanya/dlcl204/blob/master/italian/pos_italian.md)
 - Tutorial: ^[Italian named-entity recognition with Tint](https://github.com/quinnanya/dlcl204/blob/master/italian/ner_italian.md)
+- Python: [a fork of Sequence Tagging](https://github.com/riedlma/sequence_tagging#download-models-and-embeddings) (NER using TensorFlow) has models for Italian named entity recognition
 - Python: SpaCy offers [POS tags, dependency parse and named entities for Italian](https://spacy.io/models/it) based on a news corpus
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, part-of-speech tagging, named entity extraction (using Wikipedia data), morphological analysis, transliteration, and sentiment analysis for Italian
 
