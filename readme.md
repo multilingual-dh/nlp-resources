@@ -16,7 +16,7 @@ These tools and methods are not tied to any particular language. The caveat is t
 
 ## Modern languages
 
-If you're comfortable working with Python, the [Polyglot library](https://pypi.org/project/polyglot/) provides language detection for 196 languages, tokenization in 165 languages, named entity recognition in 40 languages, part-of-speech tagging in 16 languages, sentiment analysis in 136 languages, and morphological analysis in 135 languages. It can also manage text in multiple languages at once. If you're working a lot with one particualr language, it's probably best to find more language-specific tools, but as a better-than-nothing option for highly underresourced languages, it's an option.
+If you're comfortable working with Python, the [Polyglot library](https://pypi.org/project/polyglot/) provides language detection for 196 languages, tokenization in 165 languages, named entity recognition in 40 languages, part-of-speech tagging in 16 languages, sentiment analysis in 136 languages, and morphological analysis in 135 languages. It can also manage text in multiple languages at once. If you're working a lot with one particular language, it's probably best to find more language-specific tools, but as a better-than-nothing option for highly underresourced languages, it's an option.
 
 A few other general thoughts & notes:
 
@@ -28,14 +28,12 @@ Arabic has to be segmented (clitic segmentation) before it can be used well with
 
 - NLP resource directory: Github has a [tag for Arabic NLP](https://github.com/topics/arabic-nlp) including pointers to repos for [sentiment analysis for tweets, reviews, and standard Arabic](https://github.com/iamaziz/ar-embeddings), [named entity recognition](https://github.com/linuxscout/mishtar), etc.
 - Part-of-speech tagger: Stanford NLP has a [part-of-speech tagger for Arabic](https://nlp.stanford.edu/software/tagger.shtml)
-- OCR: Tesseract 4.0 has [training data for Arabic](https://github.com/tesseract-ocr/tessdata/blob/master/ara.traineddata)
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, named entity extraction (using Wikipedia data), morphological analysis (standard and Egyptian Arabic), transliteration, and sentiment analysis (standard and Egyptian Arabic)
 
 
 ### Armenian
 I stumbled onto Armenian recently while looking at full-text PDFs in HathiTrust. The OCR for all the Armenian books I came across was Latin or Greek jibberish, though I was able to get (what looked to me, playing match-the-squiggles) reasonable OCR out of Tesseract. I had a nice exchange with HathiTrust about it, suggesting that I report the errors I came across. In the meantime, though, plan to re-OCR the text if you're getting Armenian from HathiTrust.
 
-- OCR: Tesseract 4.0 has *[training data for Armenian](https://github.com/tesseract-ocr/tessdata/blob/master/hye.traineddata)
 - Named-entity recognition: [training data for Armenian NER](https://github.com/ispras-texterra/pioner) using Wikipedia
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, named entity extraction (using Wikipedia data), morphological analysis, transliteration, and sentiment analysis for Armenian
 
@@ -46,7 +44,6 @@ Chinese needs to be segmented (spaces artificially inserted between words) befor
 - Tutorial: ^[Chinese named-entity recognition with Stanford NLP](https://github.com/quinnanya/dlcl204/blob/master/chinese/ner_chinese.md) using Stanford NLP tools
 - Python: *[xpinyin](https://pypi.org/project/xpinyin/) (for Mandarin) and [python-jyutping](https://github.com/imdreamrunner/python-jyutping) (for Cantonese), for transliterating Chinese into a phonetic representation, with or without tones. (Example: ^[Taiwanese rap analyzer Jupyter notebook](https://github.com/quinnanya/dlcl204/blob/master/chinese/taiwanese-rap-analyzer.ipynb) for identifying lines of Taiwanese rap lyrics that include repeated tones.)
 - Python: *[PyCantonese](http://pycantonese.org/): includes jyutping converter/search, stopwords, and part-of-speech tagging for Cantonese.
-- OCR: Tesseract 4.0 has training data for [simplified Chinese Characters](https://github.com/tesseract-ocr/tessdata/blob/master/chi_sim.traineddata), [vertical simplified Chinese characters](https://github.com/tesseract-ocr/tessdata/blob/master/chi_sim_vert.traineddata), [traditional Chinese characters](https://github.com/tesseract-ocr/tessdata/blob/master/chi_tra.traineddata), and [vertical traditional Chinese characters](https://github.com/tesseract-ocr/tessdata/blob/master/chi_tra_vert.traineddata)
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, named entity extraction (using Wikipedia data), morphological analysis (Chinese and Gan Chinese), transliteration, and sentiment analysis (Chinese and Gan Chinese)
 
 ### Dutch
@@ -59,7 +56,7 @@ French is partly supported by Stanford Core NLP, so the instructions for doing p
 - Tutorial (with modifications): ^[Part-of-speech tagging with Stanford NLP](https://github.com/quinnanya/dlcl204/blob/master/german/pos_german.md): this is the German tutorial, but in step 3, replace *german-hgc.tagger* with *french.tagger* in the code that you run. You can also use a Universal Dependencies-based tagger (also described in the German tutorial) by replacing *german-hgc.tagger* with *french-ud.tagger*. The standard French tagger uses tags from the [French treebank](http://www.llf.cnrs.fr/Gens/Abeille/French-Treebank-fr.php).
 - Named-entity recognition: [OpenNER](https://www.opener-project.eu/) supports French
 - Python: SpaCy offers [POS tags, dependency parse and named entities for French](https://spacy.io/models/fr) based on a news corpus
-- OCR: Tesseract 4.0 has [training data for French](https://github.com/tesseract-ocr/tessdata/blob/master/fra.traineddata)
+- [CamemBERT](https://camembert-model.fr/) language model: for part-of-speech (POS) tagging, dependency parsing, named entity recognition (NER) and natural language inference (NLI).
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, part-of-speech tagging, named entity extraction (using Wikipedia data), morphological analysis, transliteration, and sentiment analysis for French
 
 ### German
@@ -72,7 +69,6 @@ There is a large community of DH folks doing text analysis on German under the "
 - Directory: [NLP resources and tools for German](https://github.com/adbar/German-NLP)
 - Python: SpaCy offers [POS tags, dependency parse and named entities for German](https://spacy.io/models/de) based on a news corpus
 - Python: [a fork of Sequence Tagging](https://github.com/riedlma/sequence_tagging#download-models-and-embeddings) (NER using TensorFlow) has models for modern and historical German named entity recognition
-- OCR: Tesseract 4.0 has [training data for German](https://github.com/tesseract-ocr/tessdata/blob/master/deu.traineddata) as well as [Fraktur](https://github.com/tesseract-ocr/tessdata/blob/master/deu_frak.traineddata)
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, part-of-speech tagging, named entity extraction (using Wikipedia data), morphological analysis, transliteration, and sentiment analysis for German
 - Blog post: [Common pitfalls with the pre-processing of German text for NLP](https://medium.com/idealo-tech-blog/common-pitfalls-with-the-preprocessing-of-german-text-for-nlp-3cfb8dc19ebe) - geared towards commercial applications, but provides a useful overview and comparison of different part-of-speech taggers, stopword lists, compound splitting, etc.
 
@@ -82,7 +78,6 @@ I've recently been working on a Hebrew NLP project, and should have more experie
 - Directory: [Hebrew NLP resources](https://github.com/NLPH/NLPH_Resources)
 - Topic modeling: [LemLDA: an LDA Package for Hebrew](https://www.cs.bgu.ac.il/~elhadad/nlpproj/LDAforHebrew.html) - you'll probably need to run the rule-based Hebrew tokenizer (below) on your text before trying it with this tool-- punctuation like parentheses breaks it.
 - Python: *[rule-based Hebrew tokenizer](https://www.cs.bgu.ac.il/~yoavg/software/hebtokenizer/) - I've had some problems with this (Mac, Python 3.7) with regard to successfully saving the output file, but I've stuck the core functions in a Jupyter notebook and added my own input/output code, and it's worked well.
-- OCR: Tesseract 4.0 has [training data for Hebrew](https://github.com/tesseract-ocr/tessdata/blob/master/heb.traineddata)
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, named entity extraction (using Wikipedia data), morphological analysis, transliteration, and sentiment analysis for Hebrew
 
 ### Hindi
@@ -91,13 +86,11 @@ I've recently been working on a Hebrew NLP project, and should have more experie
 - Python: [Tokenizer and stemmer for Hindi](https://github.com/taranjeet/hindi-tokenizer)
 - Python: [Hindi dependency parser](https://bitbucket.org/sivareddyg/hindi-dependency-parser/src/master/)
 - Tutorial/Python: [Hindi part-of-speech tagging using NLTK](https://github.com/pemagrg1/Hindi-POS-Tagging-and-Keyword-Extraction)
-- OCR: Tesseract 4.0 has [training data for Hindi](https://github.com/tesseract-ocr/tessdata/blob/master/hin.traineddata)
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, named entity extraction (using Wikipedia data), morphological analysis (Hindi and Fiji Hindi), transliteration, and sentiment analysis for Hindi
 
 ### Indonesian
 - Directory: [Indonesian NLP resources](https://github.com/kmkurn/id-nlp-resource)
 - Directory: [Bahasa Indonesia Natural Language Processing](https://github.com/keyreply/Bahasa-Indo-NLP-Dataset)
-- OCR: Tesseract 4.0 has [training data for Indonesian](https://github.com/tesseract-ocr/tessdata/blob/master/ind.traineddata)
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, part-of-speech tagging, named entity extraction (using Wikipedia data), morphological analysis, transliteration, and sentiment analysis for Indonesian
 
 ### Italian
@@ -118,19 +111,16 @@ The most commonly used tool for Japanese text processing is [MeCab](https://taku
 - Jupyter notebook: [Japanese segmentation with RakutenMA](https://github.com/quinnanya/japanese-segmenter) - doesn't work yet on Windows due to Unicode issues
 - Tutorial: [Japanese part-of-speech tagging with RakutenMA](https://github.com/quinnanya/dlcl204/blob/master/japanese/pos_japanese.md) - uses the demo web interface for RakutenMA
 - Tutorial: [Japanese named-entity recognition with Apache OpenNLP](https://github.com/quinnanya/dlcl204/blob/master/japanese/ner_japanese.md)
-- OCR: Tesseract 4.0 has [training data for Japanese](https://github.com/tesseract-ocr/tessdata/blob/master/jpn.traineddata) and [vertical Japanese](https://github.com/tesseract-ocr/tessdata/blob/master/jpn_vert.traineddata) but Japanese OCR isn't great. For her PDFs, Adobe Acrobat Professional performed best, but all the tools had problems especially with [half-width characters](https://en.wikipedia.org/wiki/Half-width_kana) and [furigana](https://en.wikipedia.org/wiki/Furigana).
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, named entity extraction (using Wikipedia data), morphological analysis, transliteration, and sentiment analysis for Indonesian
 
 ### Korean
 - Python: [KoNLPy: Korean NLP in Python](http://konlpy.org/en/latest/), includes part-of-speech tagging, corpora, dictionaries
 - R: [KoNLP](https://github.com/haven-jeon/KoNLP), part-of-speech tagging
 - Directory: [Awesome-Korean-NLP](https://github.com/datanada/Awesome-Korean-NLP), a curated directory of resources, hasn't been updated in about two years
-- OCR: Tesseract 4.0 has [training data for Korean](https://github.com/tesseract-ocr/tessdata/blob/master/kor.traineddata) and [vertical Korean](https://github.com/tesseract-ocr/tessdata/blob/master/kor_vert.traineddata)
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, named entity extraction (using Wikipedia data), morphological analysis, transliteration, and sentiment analysis for Korean
 
 ### Mongolian
 - Directory: [Mongolian NLP](https://github.com/tugstugi/mongolian-nlp) - includes named-entity recognition, data sets (e.g. with personal and clan names)
-- OCR: Tesseract 4.0 has [training data for Mongolian](https://github.com/tesseract-ocr/tessdata/blob/master/mon.traineddata)
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, morphological analysis, and sentiment analysis for Mongolian
 
 
@@ -141,7 +131,6 @@ Portuguese is comapratively underresourced for text analysis relative to other c
 - Incomplete tutorial: ^[Portuguese named-entity recognition](https://github.com/quinnanya/dlcl204/blob/master/portuguese/ner_portuguese.md), based on [this tutorial](https://github.com/arop/ner-re-pt/wiki/Stanford-CoreNLP) by André Pires and using [materials from his master's thesis](https://github.com/arop/ner-re-pt)
 - Python: SpaCy offers [POS tags, dependency parse and named entities for Portuguese](https://spacy.io/models/pt) based on a news corpus
 - Tutorial: [Portuguese examples](http://www.nltk.org/howto/portuguese_en.html) for [Natural Language Processing with Python](http://www.nltk.org/book/) (NLTK)
-- OCR: Tesseract 4.0 has [training data for Portuguese](https://github.com/tesseract-ocr/tessdata/blob/master/por.traineddata)
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, part-of-speech tagging, named entity extraction (using Wikipedia data), morphological analysis, transliteration, and sentiment analysis for Portuguese
 
 
@@ -154,7 +143,6 @@ Because Russian is highly inflected (i.e. a word can appear in many forms depend
 - Tutorial: ^[Russian named-entity recognition](https://github.com/quinnanya/dlcl204/blob/master/russian/ner_russian.md), uses Natasha Python module
 - Jupyter notebook: ^[Russian text cleaning & word vectors](https://github.com/quinnanya/dlcl204/blob/master/harry_potter_tanya_grotter_project_2019/russian_text_cleanup_word_vectors.ipynb)
 - Python: *[Natasha](https://github.com/natasha/natasha) module for named-entity recognition
-- OCR: Tesseract 4.0 has [training data for Russian](https://github.com/tesseract-ocr/tessdata/blob/master/rus.traineddata)
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, named entity extraction (using Wikipedia data), morphological analysis, transliteration, and sentiment analysis for Russian
 
 
@@ -169,7 +157,6 @@ Because Russian is highly inflected (i.e. a word can appear in many forms depend
 ### Tagalog
 - Part-of-speech tagger: [Filipino tagger for use with Stanford NLP tagger](https://github.com/matthewgo/FilipinoStanfordPOSTagger)
 - Sentiment analysis: [Sentiment analysis for Filipino tweets](https://github.com/rrmina/Sentiment-Analysis-of-Filipino-Tweets)
-- OCR: Tesseract 4.0 has [training data for Tagalog](https://github.com/tesseract-ocr/tessdata/blob/master/tgl.traineddata)
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, named entity extraction (using Wikipedia data), morphological analysis, transliteration, and sentiment analysis for Tagalog
 
 ### Thai
@@ -177,7 +164,6 @@ Because Russian is highly inflected (i.e. a word can appear in many forms depend
 - Directory: Github has a [Thai NLP tag](https://github.com/topics/thai-nlp)
 - Python: [PyThaiNLP](https://github.com/PyThaiNLP/pythainlp) - transliteration, tokenizing, part-of-speech tagger, collation, and other features.
 - R: [thainltk: Thai National Language Toolkit](https://rdrr.io/github/pichaio/thainltk/)
-- OCR: Tesseract 4.0 has [training data for Thai](https://github.com/tesseract-ocr/tessdata/blob/master/tha.traineddata)
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, named entity extraction (using Wikipedia data), morphological analysis, transliteration, and sentiment analysis for Thai
 
 
@@ -192,19 +178,15 @@ Because Russian is highly inflected (i.e. a word can appear in many forms depend
 - [VnCoreNLP: A Vietnamese natural language processing toolkit](https://github.com/vncorenlp/VnCoreNLP) (Java) - provides word segmentation, POS tagging, named entity recognition (NER) and dependency parsing
 - Directory: Github has a [Vietnamese NLP tag](https://github.com/topics/vietnamese-nlp)
 - Sentiment analysis: [Vietnamese sentiment analysis for tweets](https://github.com/linkpp/vietnamese-sentiment-analysis)
-- OCR: Tesseract 4.0 has [training data for Vietnamese](https://github.com/tesseract-ocr/tessdata/blob/master/vie.traineddata)
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, named entity extraction (using Wikipedia data), morphological analysis, transliteration, and sentiment analysis for Vietnamese
 
 
 ### Welsh
 - Python: [CyTag](https://github.com/CorCenCC/CyTag) - text segmenter, sentence splitter, tokeniser, part-of-speech tagger
-- OCR: Tesseract has [training data for Welsh](https://github.com/tesseract-ocr/tessdata/raw/4.00/cym.traineddata)
 - There's a few papers (e.g. [Towards a Welsh Semantic Annotation System](https://eprints.lancs.ac.uk/id/eprint/123588/1/lrec2018_cysemtagger.pdf)) talking about work on CySemTagger (a Welsh semantic annotation tool), but there doesn't seem to be a usable version yet
 
 ### Yiddish
 The [Yiddish Book Center](https://www.yiddishbookcenter.org/) has thousands of scanned PDFs of books in Yiddish, but without OCR. To get plain text versions of the books (OCR'd using Jochre), you can [create an account here](https://ocr.yiddishbookcenter.org).
-
-- OCR: [Jochre](https://github.com/urieli/jochre) does Yiddish OCR using supervised machine learning techniques
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, morphological analysis, transliteration, and sentiment analysis for Yiddish
 
 
@@ -222,7 +204,6 @@ NLP tools for historical languages make the most sense when the language is atte
 - Linked data: [LiLa - Linking Latin](https://lila-erc.eu/output/) is developing a linked data knowledge base for Latin
 - Texts: [Digital Latin Library](https://digitallatin.org/) publishes critical editions of Latin texts, and facilitates finding texts online that are written in Latin
 - Texts: [Perseus Digital Library](http://www.perseus.tufts.edu/hopper/), a longstanding digital humanities project, with texts in Greek, Arabic, and English along with Latin
-- OCR: Tesseract 4.0 has [training data for Latin](https://github.com/tesseract-ocr/tessdata/blob/master/lat.traineddata)
 
 ### Coptic
 - Tool suite: [Coptic Scriptorium](http://copticscriptorium.org/) has multiple [tools for annotating, converting, and processing Coptic](http://copticscriptorium.org/tools), including normalizers, a loan-word tagger, lemmatizer, universal dependency treebank, part-of-speech tagger, etc.
@@ -231,7 +212,7 @@ NLP tools for historical languages make the most sense when the language is atte
 ## Other language families & groups
 
 ### Languages of Africa
-[Kathleen Siminyu](https://www.linkedin.com/today/author/kathleen-siminyu-7356b810?trk=public_profile_articles_see_all) has been working on developing NLP resources for languages of Africa, and posting update on LinkedIn. A February 2019 post describes work on a [Luganda-Kinyarwanda translation model based on word vector embeddings](https://www.linkedin.com/pulse/nlp-resources-african-languages-lugandakinyarwanda-model-siminyu?trk=portfolio_article-card_title).
+[Kathleen Siminyu](https://www.linkedin.com/today/author/kathleen-siminyu-7356b810?trk=public_profile_articles_see_all) has been working on developing NLP resources for languages of Africa, and posting update on LinkedIn. A February 2019 post describes work on a [Luganda-Kinyarwanda translation model based on word vector embeddings](https://www.linkedin.com/pulse/nlp-resources-african-languages-lugandakinyarwanda-model-siminyu?trk=portfolio_article-card_title). There's also a [collaborative project underway](https://www.masakhane.io) to develop translation models for African languages.
 
 - Directory: [Ethopian speech and text corpora](http://tekstlab.uio.no/ethiopia/)
 - Directory: [text corpora for languages of Nigeria](https://orikiwa.wordpress.com/nlp-resources-for-nigerian-languages/)
