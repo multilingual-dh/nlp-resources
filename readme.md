@@ -115,9 +115,12 @@ The most commonly used tool for Japanese text processing is [MeCab](https://taku
 
 ### Korean
 - Python: [KoNLPy: Korean NLP in Python](http://konlpy.org/en/latest/), includes part-of-speech tagging, corpora, dictionaries
+- Python: [Koshort](https://koshort.readthedocs.io/en/latest/), includes trendy Korean corpora used on the Internet.
+- Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, named entity extraction (using Wikipedia data), morphological analysis, transliteration, and sentiment analysis for Korean
+- Python: [SoyNLP](https://github.com/lovit/soynlp) is pure Python code based on unsupervised learning, which detects non-existent words, tokenizes sentences into words, and includes a noun extractor, part-of-speech tagging, a vectorizer, a normalizer, and PMI(Point-wise Mutual Information) functions. [SoySpacing](https://github.com/lovit/soyspacing), Korean Space Error Corrector, helps find the proper spacing between morphemes.
 - R: [KoNLP](https://github.com/haven-jeon/KoNLP), part-of-speech tagging
 - Directory: [Awesome-Korean-NLP](https://github.com/datanada/Awesome-Korean-NLP), a curated directory of resources, hasn't been updated in about two years
-- Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, named entity extraction (using Wikipedia data), morphological analysis, transliteration, and sentiment analysis for Korean
+
 
 ### Mongolian
 - Directory: [Mongolian NLP](https://github.com/tugstugi/mongolian-nlp) - includes named-entity recognition, data sets (e.g. with personal and clan names)
