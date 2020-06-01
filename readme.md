@@ -57,6 +57,7 @@ French is partly supported by Stanford Core NLP, so the instructions for doing p
 - Named-entity recognition: [OpenNER](https://www.opener-project.eu/) supports French
 - Python: SpaCy offers [POS tags, dependency parse and named entities for French](https://spacy.io/models/fr) based on a news corpus
 - [CamemBERT](https://camembert-model.fr/) language model: for part-of-speech (POS) tagging, dependency parsing, named entity recognition (NER) and natural language inference (NLI).
+- [Flaubert](https://github.com/getalp/Flaubert): word embeddings compatible with Hugging Face's Transformers library
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, part-of-speech tagging, named entity extraction (using Wikipedia data), morphological analysis, transliteration, and sentiment analysis for French
 
 ### German
