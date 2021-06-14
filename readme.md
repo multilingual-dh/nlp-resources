@@ -45,6 +45,9 @@ Chinese needs to be segmented (spaces artificially inserted between words) befor
 - Python: *[xpinyin](https://pypi.org/project/xpinyin/) (for Mandarin) and [python-jyutping](https://github.com/imdreamrunner/python-jyutping) (for Cantonese), for transliterating Chinese into a phonetic representation, with or without tones. (Example: ^[Taiwanese rap analyzer Jupyter notebook](https://github.com/quinnanya/dlcl204/blob/master/chinese/taiwanese-rap-analyzer.ipynb) for identifying lines of Taiwanese rap lyrics that include repeated tones.)
 - Python: *[PyCantonese](http://pycantonese.org/): includes jyutping converter/search, stopwords, and part-of-speech tagging for Cantonese.
 - Python: the [Polyglot library](https://pypi.org/project/polyglot/) supports language detection, named entity extraction (using Wikipedia data), morphological analysis (Chinese and Gan Chinese), transliteration, and sentiment analysis (Chinese and Gan Chinese)
+- Platform: [MARKUS](https://dh.chinese-empires.eu/markus/): reading and markup platform with automatic tagging and identification of Chinese personal and place names, time references, bureaucratic offices, and Buddhist terms.
+- Platform: [DocuSky](https://docusky.org.tw/DocuSky/home/#): collaboration platform supporting XML markup and database creation for Chinese.
+- Platform: [Ten Thousand Rooms Project (廣廈千萬間項目)](https://tenthousandrooms.yale.edu/): platform for pre-modern textual studies focusing on Chinese.
 
 ### Dutch
 - Python: [a fork of Sequence Tagging](https://github.com/riedlma/sequence_tagging#download-models-and-embeddings) (NER using TensorFlow) has models for Dutch named entity recognition
